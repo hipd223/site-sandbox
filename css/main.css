@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Rubik", sans-serif;
+    --color-light: #fff;
+    --transition: all 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-light);
+}
+
+.wrapper {
+    backdrop-filter: blur(14px);
+    background: linear-gradient(180deg, #000 0%, #4a2800 100%);
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+.header__logo {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 29px;
+    color: var(--color-light);
+}
+.header__logo:hover {
+    cursor: pointer;
+}
+
+.header__nav {
+    float: right;
+    width: 50%;
+}
+
+.header__nav-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-ul li {
+    display: inline-block;
+}
+
+.header__nav-ul li a {
+    color: #fff;
+    transition: var(--transition);
+}
+
+
+.header__nav-ul li.active::after {
+    content: '';
+    display: block;
+    width: 39px;
+    height: 4px;
+    background-image: url(../img/active-bar.svg);
+}
+
+.header__nav-ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #DC7000;
+}
+
+.header__nav-ul li.btn a {
+    background: #FA9021;
+    padding: 9px 25px;
+    border-radius: 6px;
+    right: -5px;
+}
+
+.header__nav-ul li.btn a:hover {
+    background: #DC7000;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.hero__info {
+    width: 527px;
+    padding-top: 71px;
+}
+
+.hero__info p {
+    line-height: 200%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero__info-h1 {
+    font-size: 50px;
+    line-height: 155%;
+}
+
+.hero__info-h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #E87D0E;
+    line-height: 155%;
+}
+
+
+.hero__info-button {
+    background: linear-gradient(113deg, #fa8305 0%, #fb9e3c 100%);
+    color: var(--color-light);
+    border-radius: 40px;
+    padding: 14px 31px 15px 30px;
+    margin-top: 50px;
+    transition: var(--transition);
+}
+
+.hero__info-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero__info-buttonText {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+.hero__image {
+    position: absolute;
+    top: -150px;
+    right: 0;
+    z-index: -1;
+}
+
+.trending {
+    padding-top: 78px;
+}
+
+.trending__heading {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 187%;
+}
+
+.trending__heading-button {
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: var(--second-family);
+    line-height: 187%;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    padding: 10px 30px;
+    float: right;
+}
+
+.trending__heading-button:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.trending__heading-button:active {
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.trending__games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 57px 0 128px;
+}
+
+.trending__games span {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 187%;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.trending__games span img {
+    position: relative;
+    top: 2px;
+    padding-right: 9px;
+}
+
+.trending__text {
+    color: var(--color-light);
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 187%;
+    text-align: center;
+}
+
+.trending__text-hero {
+    justify-self: center;
+}
+
+.trending__text-hero h2{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 187%;
+    padding: 67px 0 32px;
+}
+
+.trending__text-hero p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    max-width: 545px;
+    padding-bottom: 46px;
+}
+
+.trending__text-hero-dots {
+    display: block;
+    position: relative;
+    left: 922px;
+    top: 86px;
+    z-index: -1;
+}
+
+.trending__pic-hero {
+    margin: 0 auto;
+    width: 1423px;
+    ;
+}
