@@ -248,5 +248,54 @@ header {
 .trending__pic-hero {
     margin: 0 auto;
     width: 1423px;
-    ;
+    padding-bottom: 157px;
+}
+
+.features {
+    background: url(/img/homepagebg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.features__head {
+    max-width: 826px;
+    margin: 0 auto;
+}
+
+.features__head-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 187%;
+    text-align: center;
+    padding-top: 93px;
+    margin-bottom: 25px;
+}
+
+.features__head-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    text-align: center;
+    margin-bottom: 99px;
+}
+
+.features__info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features__info-block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2.5%;
+}
+
+.features__info-block p {
+    margin: 30px 0 28px 0;
+}
+
+.features__info-blockArrow:hover {
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease;
 }
